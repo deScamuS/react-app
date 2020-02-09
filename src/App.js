@@ -7,16 +7,16 @@ import "./App.css"
 
 const App = () => {
   const usersData = [
-    { id: 1, name: "Tania", username: "floppydiskette" },
-    { id: 2, name: "Craig", username: "siliconeidolon" },
-    { id: 3, name: "Ben", username: "benisphere" }
+    { id: 0, name: "Gabriel", username: "" },
+    { id: 1, name: "Michael", username: "" },
+    { id: 2, name: "Beezelbub", username: "" }
   ]
   const [users, setUsers] = useState(usersData)
 
   //function
   const addUser = user => {
     user.id = users.length + 1
-    setUsers([users, user])
+    setUsers([...users, user])
   }
   return (
     <div className="container">
