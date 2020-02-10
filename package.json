@@ -1,6 +1,7 @@
 {
   "name": "react-without-create-react",
   "version": "0.1.0",
+  "homepage": "https://descamus.github.io/react-app",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -16,6 +17,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

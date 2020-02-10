@@ -8,7 +8,7 @@ import logo from './crud-operations.jpg'
 import "./App.css"
 
 const App = () => {
-  const usersData = [{ id: 0, name: "God", username: "You are fucked" }]
+  const usersData = [{ id: 0, name: "God", username: "You are so screwed..." }]
 
   const [users, setUsers] = useState(usersData)
 
@@ -39,8 +39,8 @@ const App = () => {
 
   return (
     <div className="container">
-      <img style={{opacity: '.2'}} src={logo} alt=""/>
-      
+      <img style={{ opacity: '.2' }} src={logo} alt="" />
+
       <h1 style={{ color: "#34495E" }}> w/ React Hooks</h1>
       <div className="flex-row">
         <div className="flex-large">
@@ -55,13 +55,13 @@ const App = () => {
               />
             </div>
           ) : (
-            <div>
-              <h2 style={{ textDecoration: "underline", color: "#34495E" }}>
-                Add user
+              <div>
+                <h2 style={{ textDecoration: "underline", color: "#34495E" }}>
+                  Add user
               </h2>
-              <AddUserForm addUser={addUser} />
-            </div>
-          )}
+                <AddUserForm addUser={addUser} />
+              </div>
+            )}
         </div>
         <div className="flex-large">
           <h2 style={{ textDecoration: "underline", color: "#34495E" }}>
