@@ -17,13 +17,14 @@ tfoot th {
 }
 
 td {
-  border-bottom: 1px solid #dedede;
+  border-bottom: 2px solid #dedede;
 }
 
 th,
 td {
   text-align: left;
   padding: 0.5rem;
+  color: #000;
 }
 
 caption {

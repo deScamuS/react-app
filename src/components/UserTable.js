@@ -20,7 +20,7 @@ const UserTable = props => (
             <td>{user.username}</td>
             <td>
               <MDBBtn
-                color="transparent"
+                outline color="light-blue"
                 size="sm"
                 onClick={() => {
                   props.editRow(user)}}
@@ -32,7 +32,7 @@ const UserTable = props => (
               <MDBBtn
                 onClick={event => props.deleteUser(user.id)}
                 className="button muted-button"
-                color="transparent"
+                outline color="light-blue"
                 size="sm"
               >
                 delete

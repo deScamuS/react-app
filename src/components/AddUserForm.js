@@ -39,9 +39,11 @@ const AddUserForm = props => {
         <MDBBtn
           className=".waves-effect"
           outline
-          color="transparent"
+          color="light-blue"
           onChange="{handleInputChange}"
-          onClick={() =>{ props.addUser(user)}}
+          onClick={() => {
+            props.addUser(user)
+          }}
         >
           Add User
         </MDBBtn>

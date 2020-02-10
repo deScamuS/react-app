@@ -38,7 +38,7 @@ const App = () => {
 
   return (
     <div className="container">
-      <h1 style={{ color: "black" }}>CRUD App w/ React Hooks</h1>
+      <h1 style={{ color: "#34495E" }}>CRUD w/ React Hooks</h1>
       <div className="flex-row">
         <div className="flex-large">
           {editing ? (
@@ -53,13 +53,17 @@ const App = () => {
             </div>
           ) : (
             <div>
-              <h2 style={{ textDecoration: "underline" }}>Add user</h2>
+              <h2 style={{ textDecoration: "underline", color: "#34495E" }}>
+                Add user
+              </h2>
               <AddUserForm addUser={addUser} />
             </div>
           )}
         </div>
         <div className="flex-large">
-          <h2 style={{ textDecoration: "underline" }}>View users</h2>
+          <h2 style={{ textDecoration: "underline", color: "#34495E" }}>
+            View users
+          </h2>
           <UserTable users={users} deleteUser={deleteUser} editRow={editRow} />
         </div>
       </div>
