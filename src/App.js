@@ -5,10 +5,11 @@ import UserTable from "./components/UserTable"
 import AddUserForm from "./components/AddUserForm"
 import EditUserForm from "./components/EditUserForm"
 import logo from './crud-operations.jpg'
+import logo3 from './react.png'
 import "./App.css"
 
 const App = () => {
-  const usersData = [{ id: 0, name: "God", username: "theos1.yourallsoscrewed;)" }]
+  const usersData = [{ id: 0, name: 'M153', username: "DeSantis" }]
 
   const [users, setUsers] = useState(usersData)
 
@@ -38,15 +39,15 @@ const App = () => {
   }
 
   return (
-    <div className="container">
-      <img style={{ opacity: '.2' }} src={logo} alt="" className="responsive" />
+    <div className='container'>
 
-      <h1 style={{ color: "#34495E" }}> w/ React Hooks</h1>
-      <div className="flex-row">
+        <h1 style={{ color: "#34495E", marginRight: '45px' }}>REACT HOOKS</h1>
+      <div className="flex-row" >
         <div className="flex-large">
+          <img src={logo} alt="" className='responsive' />
           {editing ? (
             <div>
-              <h2>Edit User</h2>
+              <h2 >Edit User</h2>
               <EditUserForm
                 editing={editing}
                 setEditing={setEditing}
@@ -57,7 +58,7 @@ const App = () => {
           ) : (
               <div>
                 <h2 style={{ textDecoration: "underline", color: "#34495E" }}>
-                  Add user
+                  Sailor
               </h2>
                 <AddUserForm addUser={addUser} />
               </div>
@@ -65,7 +66,8 @@ const App = () => {
         </div>
         <div className="flex-large">
           <h2 style={{ textDecoration: "underline", color: "#34495E" }}>
-            View users
+            View Race Results <br />
+
           </h2>
           <UserTable users={users} deleteUser={deleteUser} editRow={editRow} />
         </div>

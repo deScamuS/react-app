@@ -3,17 +3,28 @@ html {
   -moz-osx-font-smoothing: grayscale;
   font: normal normal normal 1rem/1.6 -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 1rem;
+  
 } 
+
+.flag{
+  height: 100%; 
+  
+}
+
 img{
   width: 100%; 
   height: auto; 
-  max-width: 1050px; 
+  min-width: 200px;
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  opacity: .14
 
 }
 
 .responsive{
-  width: 100; 
-  max-width: 400;  
+  width: 100%; 
+  max-width: 300%;  
   height: auto; 
 }
 

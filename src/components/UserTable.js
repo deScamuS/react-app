@@ -7,8 +7,8 @@ const UserTable = props => (
   <MDBTable>
     <MDBTableHead>
       <tr>
-        <th>Name</th>
-        <th>User Name</th>
+        <th>#</th>
+        <th>Sailor</th>
         <th>Actions </th>
       </tr>
     </MDBTableHead>
