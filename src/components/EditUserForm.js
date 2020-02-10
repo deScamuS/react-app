@@ -1,15 +1,16 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { MDBContainer, MDBBtn } from "mdbreact"
-import "./AddUserForm.css"
 
-const AddUserForm = props => {
-  const initialFormState = { id: null, name: "", username: "" }
-  const [user, setUser] = useState(initialFormState)
+const EditUserForm = props => {
+  const [user, setUser] = useState(props.currentUser)
+  useEffect(() => {
+    setUser(props.currentUser)
+  }, [props])
+  // Tell React to skip applying an effect if certain values haven’t changed between re-renders?[ props ]
 
   const handleInputChange = event => {
     const { name, value } = event.target
-
     setUser({ ...user, [name]: value })
   }
   return (
@@ -17,9 +18,7 @@ const AddUserForm = props => {
       <form
         onSubmit={event => {
           event.preventDefault()
-          if (!user.name || !user.username) return
-          props.addUser(user)
-          setUser(initialFormState)
+          props.updateUser(user.id, user)
         }}
       >
         <label>Name</label>
@@ -39,15 +38,25 @@ const AddUserForm = props => {
         <MDBBtn
           className=".waves-effect"
           outline
-          color="transparent"
-          onChange="{handleInputChange}"
-          onClick={() =>{ props.addUser(user)}}
+          color="primary" >
+          Update User
+        </MDBBtn>
+           <MDBBtn
+          className=".waves-effect"
+          outline
+          color="secondary"
+          onClick={() => props.setEditing(false)}
         >
-          Add User
+          Cancel
         </MDBBtn>
       </form>
     </MDBContainer>
   )
 }
+export default EditUserForm
 
-export default AddUserForm
+
+          
+          
+       
+       

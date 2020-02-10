@@ -13,20 +13,24 @@ const UserTable = props => (
       </tr>
     </MDBTableHead>
     <MDBTableBody>
-    {props.users.length > 0 ? (
+      {props.users.length > 0 ? (
         props.users.map(user => (
           <tr key={user.id}>
             <td>{user.name}</td>
             <td>{user.username}</td>
             <td>
               <MDBBtn
-                className="button muted-button"
                 color="transparent"
                 size="sm"
+                onClick={() => {
+                  props.editRow(user)}}
+                className="button muted-button"
+
               >
                 edit
               </MDBBtn>
               <MDBBtn
+                onClick={event => props.deleteUser(user.id)}
                 className="button muted-button"
                 color="transparent"
                 size="sm"
@@ -43,5 +47,5 @@ const UserTable = props => (
       )}
     </MDBTableBody>
   </MDBTable>
-   )
+)
 export default UserTable
