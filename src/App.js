@@ -4,6 +4,7 @@ import React, { useState } from "react"
 import UserTable from "./components/UserTable"
 import AddUserForm from "./components/AddUserForm"
 import EditUserForm from "./components/EditUserForm"
+import logo from './crud-operations.jpg'
 import "./App.css"
 
 const App = () => {
@@ -38,7 +39,9 @@ const App = () => {
 
   return (
     <div className="container">
-      <h1 style={{ color: "#34495E" }}>CRUD w/ React Hooks</h1>
+      <img style={{opacity: '.2'}} src={logo} alt=""/>
+      
+      <h1 style={{ color: "#34495E" }}> w/ React Hooks</h1>
       <div className="flex-row">
         <div className="flex-large">
           {editing ? (
