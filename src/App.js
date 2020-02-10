@@ -39,7 +39,7 @@ const App = () => {
 
   return (
     <div className="container">
-      <img style={{ opacity: '.2' }} src={logo} alt="" className="responsive"/>
+      <img style={{ opacity: '.2' }} src={logo} alt="" className="responsive" />
 
       <h1 style={{ color: "#34495E" }}> w/ React Hooks</h1>
       <div className="flex-row">
