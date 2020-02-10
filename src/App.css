@@ -4,7 +4,16 @@ html {
   font: normal normal normal 1rem/1.6 -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 1rem;
 } 
+img{
+  width: 100%; 
+  height: auto; 
+}
 
+.responsive{
+  width: 100; 
+  max-width: 400;  
+  height: auto; 
+}
 
 body {
   color: #404040;

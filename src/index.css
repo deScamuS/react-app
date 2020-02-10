@@ -1,9 +1,14 @@
 body {
   background: #FDEDEC ;
+
   margin: 0;
   font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+img{
+  width: 100%; 
+  height: auto; 
 }
 
 button,
