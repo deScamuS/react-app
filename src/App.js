@@ -8,7 +8,7 @@ import logo from './crud-operations.jpg'
 import "./App.css"
 
 const App = () => {
-  const usersData = [{ id: 0, name: "God", username: "theos1.yoursoscrewd" }]
+  const usersData = [{ id: 0, name: "God", username: "theos1.yourallsoscrewed;)" }]
 
   const [users, setUsers] = useState(usersData)
 
